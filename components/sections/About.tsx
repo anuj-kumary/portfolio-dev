@@ -1,5 +1,4 @@
 "use client";
-import { motion } from "framer-motion";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { FadeUpOnScroll } from "@/components/ui/FadeUp";
 import { MapPin, Briefcase, Code2, Zap } from "lucide-react";
@@ -8,22 +7,22 @@ const highlights = [
   {
     icon: Briefcase,
     label: "4+ Years",
-    description: "Professional experience building enterprise-grade software",
+    description: "Building production software that teams actually rely on every day",
   },
   {
     icon: Code2,
     label: "React & TypeScript",
-    description: "Deep expertise in modern frontend architectures and patterns",
+    description: "My primary tools for the past 4 years across multiple products",
   },
   {
     icon: Zap,
     label: "Performance",
-    description: "Delivered 70% page load improvements in production systems",
+    description: "Cut page load times by 70% on a core product used by enterprise clients",
   },
   {
     icon: MapPin,
     label: "Mumbai, India",
-    description: "Open to remote and hybrid opportunities globally",
+    description: "Open to remote and hybrid roles globally",
   },
 ];
 
@@ -33,34 +32,36 @@ export function About() {
       <div className="mx-auto max-w-6xl">
         <SectionHeader
           label="About"
-          title="Engineering with intention."
-          description="I don't just write code — I think deeply about user experience, system design, and the craft of building software that scales."
+          title="A bit about me."
+          description="Frontend engineer with a focus on building things that are fast, reliable, and easy to use."
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <FadeUpOnScroll>
             <div className="space-y-6 text-[#A1A1AA] text-lg leading-relaxed">
               <p>
-                I'm a Software Engineer at{" "}
-                <span className="text-[#FAFAFA] font-medium">Deuex Solutions</span>, where
-                I specialize in building complex frontend systems that handle real enterprise
-                workloads. Over the past 4+ years, I've moved from writing components to
-                architecting entire frontend platforms.
+                I work at{" "}
+                <span className="text-[#FAFAFA] font-medium">Deuex Solutions</span> as a
+                Software Engineer, where most of my time goes into building frontend systems
+                for enterprise products. Four years in, and I still enjoy the problem-solving
+                side of this job as much as I did when I started.
               </p>
               <p>
-                My work centers on <span className="text-[#FAFAFA]">React</span>,{" "}
-                <span className="text-[#FAFAFA]">TypeScript</span>, and modern tooling — but
-                what I care most about is the intersection of engineering rigor and design
-                quality. I believe the best software is both correct and beautiful.
+                My stack is{" "}
+                <span className="text-[#FAFAFA]">React</span> and{" "}
+                <span className="text-[#FAFAFA]">TypeScript</span> day-to-day. I have
+                worked on workflow automation tools, graph-based data exploration UIs, and
+                large-scale refactors that needed careful coordination across the team.
               </p>
               <p>
-                I've built workflow automation tools used by thousands, explored AI-assisted
-                development early, and invested heavily in performance engineering —
-                including optimizations that reduced page load times by 70%.
+                Performance is something I take seriously. One of the projects I worked on
+                saw a 70% drop in page load times after a focused optimization effort.
+                Small things add up quickly when you are working at enterprise scale.
               </p>
               <p>
-                Outside of shipping features, I contribute to open source, experiment with
-                AI tooling, and obsess over developer experience.
+                Outside of work I keep an eye on what is happening with AI tooling, contribute
+                to open source when I find something useful to add, and build side projects
+                to try out ideas.
               </p>
             </div>
           </FadeUpOnScroll>

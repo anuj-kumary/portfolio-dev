@@ -20,7 +20,7 @@ export function FeaturedProject() {
               <div className="p-10 md:p-14 flex flex-col justify-center">
                 <div className="flex flex-wrap gap-2 mb-6">
                   <Badge variant="accent">Enterprise</Badge>
-                  <Badge variant="accent">Featured</Badge>
+                  <Badge>Built at Deuex Solutions</Badge>
                 </div>
 
                 <h3 className="text-3xl md:text-4xl font-semibold text-[#FAFAFA] mb-4 tracking-tight">
@@ -28,18 +28,17 @@ export function FeaturedProject() {
                 </h3>
 
                 <p className="text-[#A1A1AA] text-lg leading-relaxed mb-8">
-                  A visual drag-and-drop workflow automation platform built for enterprise
-                  scale. Users can design, publish, and monitor complex multi-step automations
-                  — all without writing a single line of code. Handles 10,000+ workflow
-                  executions in production.
+                  A visual workflow automation tool I built at Deuex Solutions. Users can
+                  design and publish multi-step automations using a drag-and-drop canvas.
+                  It runs 10,000+ workflow executions in production across enterprise clients.
                 </p>
 
                 <ul className="space-y-3 mb-8">
                   {[
-                    "Visual node-based editor with React Flow",
+                    "Node-based canvas editor built with React Flow",
                     "Real-time workflow execution monitoring",
-                    "10,000+ active workflows in production",
-                    "Custom node types with TypeScript",
+                    "10,000+ active workflows running in production",
+                    "Custom node types built with TypeScript",
                   ].map((point) => (
                     <li key={point} className="flex items-start gap-3 text-sm text-[#A1A1AA]">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#4F8CFF] mt-2 flex-shrink-0" />

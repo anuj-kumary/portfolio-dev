@@ -61,7 +61,7 @@ export function GitHubSection({ user }: GitHubSectionProps) {
             </div>
             <div className="flex-1 text-center md:text-left">
               <p className="text-[#FAFAFA] font-semibold text-lg mb-1">
-                {user?.name ?? "Anuj Kumar"}
+                {user?.name ?? "Anujkumar Yadav"}
               </p>
               <p className="text-[#A1A1AA] text-sm">
                 {user?.bio ?? "Software Engineer · Building enterprise React apps · Open source contributor"}

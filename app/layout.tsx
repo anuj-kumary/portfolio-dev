@@ -24,13 +24,13 @@ const BASE_URL = "https://anujkumar.dev";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Anuj Kumar — Frontend Software Engineer",
-    template: "%s | Anuj Kumar",
+    default: "Anujkumar Yadav — Frontend Software Engineer",
+    template: "%s | Anujkumar Yadav",
   },
   description:
     "Frontend Software Engineer specializing in React, TypeScript, and enterprise-scale applications. Currently at Deuex Solutions. 4+ years of experience building beautiful, performant software.",
   keywords: [
-    "Anuj Kumar",
+    "Anujkumar Yadav",
     "Frontend Engineer",
     "React Developer",
     "TypeScript",
@@ -40,14 +40,14 @@ export const metadata: Metadata = {
     "Enterprise Software",
     "UI Development",
   ],
-  authors: [{ name: "Anuj Kumar", url: BASE_URL }],
-  creator: "Anuj Kumar",
+  authors: [{ name: "Anujkumar Yadav", url: BASE_URL }],
+  creator: "Anujkumar Yadav",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: BASE_URL,
-    siteName: "Anuj Kumar",
-    title: "Anuj Kumar — Frontend Software Engineer",
+    siteName: "Anujkumar Yadav",
+    title: "Anujkumar Yadav — Frontend Software Engineer",
     description:
       "Frontend Software Engineer specializing in React, TypeScript, and enterprise-scale applications.",
     images: [
@@ -55,13 +55,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Anuj Kumar — Frontend Software Engineer",
+        alt: "Anujkumar Yadav — Frontend Software Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Anuj Kumar — Frontend Software Engineer",
+    title: "Anujkumar Yadav — Frontend Software Engineer",
     description:
       "Frontend Software Engineer specializing in React, TypeScript, and enterprise-scale applications.",
     images: ["/og-image.png"],

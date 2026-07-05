@@ -2,8 +2,8 @@ import { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Anuj Kumar — Frontend Software Engineer",
-    short_name: "Anuj Kumar",
+    name: "Anujkumar Yadav — Frontend Software Engineer",
+    short_name: "Anujkumar Yadav",
     description: "Frontend Software Engineer specializing in React, TypeScript, and enterprise-scale applications.",
     start_url: "/",
     display: "standalone",

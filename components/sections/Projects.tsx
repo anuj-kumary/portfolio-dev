@@ -75,6 +75,14 @@ const FALLBACK_REPOS: Partial<GitHubRepo>[] = [
   },
 ];
 
+const BLOCKLIST = [
+  "event-based-workflow",
+  "periodic-batch-workflow",
+  "anuj-kumary",
+  "dev-portfolio",
+  "portfolio-dev",
+];
+
 const LANG_COLORS: Record<string, string> = {
   TypeScript: "#3178C6",
   JavaScript: "#F7DF1E",
@@ -84,7 +92,8 @@ const LANG_COLORS: Record<string, string> = {
 };
 
 export function Projects({ repos }: ProjectsProps) {
-  const displayRepos = repos.length > 0 ? repos.slice(0, 6) : FALLBACK_REPOS;
+  const filtered = repos.filter((r) => !BLOCKLIST.includes(r.name));
+  const displayRepos = filtered.length > 0 ? filtered.slice(0, 6) : FALLBACK_REPOS;
 
   return (
     <section id="projects" className="py-32 px-6">

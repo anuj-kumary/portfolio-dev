@@ -8,7 +8,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-sm text-[#A1A1AA]">
           Designed & Built by{" "}
-          <span className="text-[#FAFAFA] font-medium">Anuj Kumar</span>
+          <span className="text-[#FAFAFA] font-medium">Anujkumar Yadav</span>
         </p>
         <div className="flex items-center gap-6">
           <Link
