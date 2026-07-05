@@ -10,6 +10,16 @@ const headers: RequestInit["headers"] = {
     : {}),
 };
 
+// Specific repos to feature on the portfolio
+const FEATURED_REPOS = [
+  "OpenMetadata",
+  "Code-Snippets-Builder",
+  "Your-Github-Contributions",
+  "mitro",
+  "TechHub",
+  "react-native-toastify",
+];
+
 export async function getGitHubUser(): Promise<GitHubUser | null> {
   try {
     const res = await fetch(`${BASE_URL}/users/${GITHUB_USERNAME}`, {
@@ -25,28 +35,20 @@ export async function getGitHubUser(): Promise<GitHubUser | null> {
 
 export async function getPublicRepos(): Promise<GitHubRepo[]> {
   try {
-    const res = await fetch(
-      `${BASE_URL}/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=30&type=public`,
-      { headers, next: { revalidate: 3600 } }
+    const results = await Promise.all(
+      FEATURED_REPOS.map((name) =>
+        fetch(`${BASE_URL}/repos/${GITHUB_USERNAME}/${name}`, {
+          headers,
+          next: { revalidate: 3600 },
+        }).then((r) => (r.ok ? (r.json() as Promise<GitHubRepo>) : null))
+      )
     );
-    if (!res.ok) return [];
-    const repos: GitHubRepo[] = await res.json();
-    return repos.filter((r) => !r.fork).slice(0, 12);
+    return results.filter(Boolean) as GitHubRepo[];
   } catch {
     return [];
   }
 }
 
 export async function getTopRepos(): Promise<GitHubRepo[]> {
-  try {
-    const res = await fetch(
-      `${BASE_URL}/users/${GITHUB_USERNAME}/repos?sort=stars&per_page=6&type=public`,
-      { headers, next: { revalidate: 3600 } }
-    );
-    if (!res.ok) return [];
-    const repos: GitHubRepo[] = await res.json();
-    return repos.filter((r) => !r.fork);
-  } catch {
-    return [];
-  }
+  return getPublicRepos();
 }

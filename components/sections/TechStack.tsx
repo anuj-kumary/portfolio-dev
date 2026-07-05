@@ -6,23 +6,27 @@ import { FadeUpOnScroll } from "@/components/ui/FadeUp";
 const categories = [
   {
     name: "Frontend",
-    items: ["React", "Next.js", "TypeScript", "Redux", "Zustand", "Tailwind CSS", "Framer Motion"],
+    items: ["React", "Next.js", "React Native (Expo)", "TypeScript", "Redux / RTK", "Zustand", "React Flow", "Ant G6", "TanStack", "Tailwind CSS", "Material UI"],
   },
   {
     name: "Backend",
-    items: ["Node.js", "Express", "MongoDB", "PostgreSQL", "REST APIs"],
+    items: ["Node.js", "Express", "PostgreSQL", "MongoDB", "gRPC", "WebSockets", "Kafka", "JWT / RBAC", "REST APIs"],
+  },
+  {
+    name: "Real-time & Perf",
+    items: ["WebSockets", "Virtualized Lists", "Bundle Splitting", "Lazy Loading", "Rerender Optimization"],
   },
   {
     name: "Testing",
     items: ["Playwright", "Cypress", "Jest", "React Testing Library"],
   },
   {
-    name: "AI & Tools",
-    items: ["Claude Code", "OpenAI API", "GitHub Copilot", "Cursor", "MCP"],
+    name: "AI Tooling",
+    items: ["OpenAI Codex", "Claude Code", "GitHub Copilot", "Cursor", "MCP"],
   },
   {
-    name: "DevOps",
-    items: ["Docker", "GitHub Actions", "Vercel", "Netlify", "CI/CD"],
+    name: "Build & DevOps",
+    items: ["Webpack", "Babel", "Docker", "GitHub Actions", "Vercel", "Git"],
   },
 ];
 

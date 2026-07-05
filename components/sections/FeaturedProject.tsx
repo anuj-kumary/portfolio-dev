@@ -54,7 +54,7 @@ export function FeaturedProject() {
                 </div>
 
                 <Link
-                  href="https://github.com/anuj-kumary"
+                  href="https://github.com/open-metadata/OpenMetadata"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-[#4F8CFF] text-sm font-medium hover:gap-3 transition-all duration-200"

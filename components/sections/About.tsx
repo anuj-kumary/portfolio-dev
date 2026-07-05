@@ -6,18 +6,18 @@ import { MapPin, Briefcase, Code2, Zap } from "lucide-react";
 const highlights = [
   {
     icon: Briefcase,
-    label: "4+ Years",
-    description: "Building production software that teams actually rely on every day",
+    label: "4 Years",
+    description: "Shipping production React and TypeScript applications at Deuex Solutions since 2022",
   },
   {
     icon: Code2,
-    label: "React & TypeScript",
-    description: "My primary tools for the past 4 years across multiple products",
+    label: "Fullstack",
+    description: "React and TypeScript on the frontend, Node.js, PostgreSQL, gRPC, and WebSockets on the backend",
   },
   {
     icon: Zap,
-    label: "Performance",
-    description: "Cut page load times by 70% on a core product used by enterprise clients",
+    label: "70% Faster",
+    description: "Cut Page Ready load time by 11 seconds on a core enterprise product through focused optimization",
   },
   {
     icon: MapPin,
@@ -33,7 +33,7 @@ export function About() {
         <SectionHeader
           label="About"
           title="A bit about me."
-          description="Frontend engineer with a focus on building things that are fast, reliable, and easy to use."
+          description="Fullstack engineer who owns features end to end, from the canvas a user touches to the APIs behind it."
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
@@ -41,27 +41,28 @@ export function About() {
             <div className="space-y-6 text-[#A1A1AA] text-lg leading-relaxed">
               <p>
                 I work at{" "}
-                <span className="text-[#FAFAFA] font-medium">Deuex Solutions</span> as a
-                Software Engineer, where most of my time goes into building frontend systems
-                for enterprise products. Four years in, and I still enjoy the problem-solving
-                side of this job as much as I did when I started.
+                <span className="text-[#FAFAFA] font-medium">Deuex Solutions</span> where
+                I have spent the past four years building things I find genuinely interesting
+                — node-based visual editors, real-time dashboards, graph canvas UIs, and the
+                backend services that make them work.
               </p>
               <p>
-                My stack is{" "}
-                <span className="text-[#FAFAFA]">React</span> and{" "}
-                <span className="text-[#FAFAFA]">TypeScript</span> day-to-day. I have
-                worked on workflow automation tools, graph-based data exploration UIs, and
-                large-scale refactors that needed careful coordination across the team.
+                Most of my day is React and TypeScript, but I am equally comfortable on the
+                backend with Node.js, PostgreSQL, gRPC, and WebSockets. I have shipped
+                real-time features for a live cricket scoring platform, built governance
+                workflow tools that handle 10,000+ daily runs, and contributed to{" "}
+                <span className="text-[#FAFAFA]">OpenMetadata</span> — an open standard for
+                data infrastructure used by companies globally.
               </p>
               <p>
-                Performance is something I take seriously. One of the projects I worked on
-                saw a 70% drop in page load times after a focused optimization effort.
-                Small things add up quickly when you are working at enterprise scale.
+                Performance is something I take seriously. I cut Page Ready load time by 11
+                seconds (roughly 70%) on one of our core products through bundle splitting,
+                lazy loading, and eliminating unnecessary rerenders.
               </p>
               <p>
-                Outside of work I keep an eye on what is happening with AI tooling, contribute
-                to open source when I find something useful to add, and build side projects
-                to try out ideas.
+                I use AI tooling heavily — Codex, Claude Code, Copilot — and review
+                everything generated before it ships. I have a degree in Information
+                Technology from Savitribai Phule Pune University with a 9.2 GPA.
               </p>
             </div>
           </FadeUpOnScroll>
