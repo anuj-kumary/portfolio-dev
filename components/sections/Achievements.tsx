@@ -5,9 +5,9 @@ import { FadeUpOnScroll } from "@/components/ui/FadeUp";
 
 const stats = [
   { value: 4, suffix: "+", label: "Years Experience" },
-  { value: 10, suffix: "K+", label: "Daily Workflow Runs" },
+  { value: 250, suffix: "+", label: "Open Source PRs Merged" },
   { value: 70, suffix: "%", label: "Faster Page Load" },
-  { value: 4, suffix: "M+", label: "ARR on Rebuilt Product" },
+  { value: 10, suffix: "K+", label: "Governance Workflows Run" },
 ];
 
 function Counter({ target, suffix }: { target: number; suffix: string }) {

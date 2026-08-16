@@ -7,17 +7,17 @@ const highlights = [
   {
     icon: Briefcase,
     label: "4 Years",
-    description: "Shipping production React and TypeScript applications at Deuex Solutions since 2022",
+    description: "Four years shipping production React and TypeScript apps for enterprise clients at Deuex Solutions",
   },
   {
     icon: Code2,
-    label: "Fullstack",
-    description: "React and TypeScript on the frontend, Node.js, PostgreSQL, gRPC, and WebSockets on the backend",
+    label: "Full Stack",
+    description: "React and TypeScript up front, Node.js, PostgreSQL, gRPC and WebSockets on the backend",
   },
   {
     icon: Zap,
     label: "70% Faster",
-    description: "Cut Page Ready load time by 11 seconds on a core enterprise product through focused optimization",
+    description: "Brought load time from 30 seconds down to 9 on a core enterprise product through code splitting and rerender cleanup",
   },
   {
     icon: MapPin,
@@ -33,7 +33,7 @@ export function About() {
         <SectionHeader
           label="About"
           title="A bit about me."
-          description="Fullstack engineer who owns features end to end, from the canvas a user touches to the APIs behind it."
+          description="Full stack engineer who owns features end to end, from the canvas a user touches to the APIs behind it."
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
@@ -41,28 +41,40 @@ export function About() {
             <div className="space-y-6 text-[#A1A1AA] text-lg leading-relaxed">
               <p>
                 I work at{" "}
-                <span className="text-[#FAFAFA] font-medium">Deuex Solutions</span> where
-                I have spent the past four years building things I find genuinely interesting
-                — node-based visual editors, real-time dashboards, graph canvas UIs, and the
-                backend services that make them work.
+                <span className="text-[#FAFAFA] font-medium">Deuex Solutions</span>{" "}
+                where I have spent the past four years building things I find genuinely
+                interesting. Node based visual editors, real time dashboards, graph canvas
+                UIs and the backend services that make them actually work.
               </p>
               <p>
-                Most of my day is React and TypeScript, but I am equally comfortable on the
-                backend with Node.js, PostgreSQL, gRPC, and WebSockets. I have shipped
-                real-time features for a live cricket scoring platform, built governance
-                workflow tools that handle 10,000+ daily runs, and contributed to{" "}
-                <span className="text-[#FAFAFA]">OpenMetadata</span> — an open standard for
-                data infrastructure used by companies globally.
+                My day to day is mostly React and TypeScript but I am just as comfortable
+                going deeper on the backend with Node.js, PostgreSQL, gRPC and WebSockets.
+                Right now I own the{" "}
+                <span className="text-[#FAFAFA]">Governance domain at Collate (OpenMetadata)</span>.
+                The workflow builder and access request systems I built there are handling
+                over 10,000 governance workflows in production. I have 250 plus merged PRs
+                as a core contributor to OpenMetadata which has 15k GitHub stars.
               </p>
               <p>
-                Performance is something I take seriously. I cut Page Ready load time by 11
-                seconds (roughly 70%) on one of our core products through bundle splitting,
-                lazy loading, and eliminating unnecessary rerenders.
+                I have shipped production work for Uber where I migrated a legacy codebase
+                to TypeScript and brought load times down by around 70 percent. At StarTree
+                I owned core UI modules while the product grew from $500K to over $4M in
+                ARR. Along the way I also built a real time WebSocket system for live
+                cricket scoring and auctions and shipped a full stack health tracking app
+                in React Native.
               </p>
               <p>
-                I use AI tooling heavily — Codex, Claude Code, Copilot — and review
-                everything generated before it ships. I have a degree in Information
-                Technology from Savitribai Phule Pune University with a 9.2 GPA.
+                Performance matters a lot to me. On the Uber project I took load time from
+                around 30 seconds down to 9 seconds through code splitting, lazy loading
+                and cutting rerenders that were slowing things down. I write Playwright and
+                Cypress tests, do code reviews regularly and enjoy helping engineers level
+                up on React and TypeScript.
+              </p>
+              <p>
+                I lean on AI tools like Codex, Claude Code and Copilot for scaffolding and
+                refactors but I always review what comes out before it goes anywhere near
+                production. I studied Information Technology at Savitribai Phule Pune
+                University and graduated with a 9.2 GPA.
               </p>
             </div>
           </FadeUpOnScroll>

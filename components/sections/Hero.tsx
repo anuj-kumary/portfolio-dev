@@ -77,16 +77,15 @@ export function Hero() {
 
             <FadeUp delay={0.35}>
               <p className="text-xl md:text-2xl text-[#4F8CFF] font-medium mb-8 tracking-tight">
-                Frontend Software Engineer
+                Full Stack Software Engineer
               </p>
             </FadeUp>
 
             <FadeUp delay={0.45}>
               <p className="text-lg text-[#A1A1AA] leading-relaxed mb-12">
-                Building scalable React applications,
-                beautiful user experiences,
-                AI-powered developer tools,
-                and enterprise software.{" "}
+                Four years building React and TypeScript products that handle real scale.
+                250 plus PRs merged on OpenMetadata and the governance workflow builder
+                I shipped is handling over 10,000 workflows in production right now.{" "}
                 <span className="text-[#FAFAFA] font-medium">Currently at Deuex Solutions.</span>
               </p>
             </FadeUp>
@@ -156,7 +155,7 @@ export function Hero() {
                   </p>
                   <p className="pl-4">
                     <span className="text-[#A1A1AA]">role:</span>{" "}
-                    <span className="text-emerald-400">&quot;Frontend Engineer&quot;</span><span className="text-[#A1A1AA]">,</span>
+                    <span className="text-emerald-400">&quot;Full Stack Engineer&quot;</span><span className="text-[#A1A1AA]">,</span>
                   </p>
                   <p className="pl-4">
                     <span className="text-[#A1A1AA]">exp:</span>{" "}

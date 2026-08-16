@@ -7,24 +7,57 @@ import { MapPin, Award } from "lucide-react";
 const experiences = [
   {
     role: "Software Engineer",
-    company: "Deuex Solutions",
+    company: "Deuex Solutions Pvt. Ltd.",
     period: "Jul 2022 – Present",
     location: "Mumbai, India",
     description:
-      "Building production React and TypeScript applications backed by Node.js services. Own features end to end, from the canvas a user touches to the APIs and real-time pipelines behind them.",
-    achievements: [
-      "Contributed to Uber's internal uWorc workflow platform — migrated the codebase from React class components to TypeScript functional components, reducing recurring bugs and improving maintainability",
-      "Built a node-based visual workflow editor in React Flow now driving 10,000+ governance workflows, replacing manual processes and cutting team effort by 60–70%",
-      "Built the Ontology Explorer for OpenMetadata with Ant G6 — an interactive graph canvas for navigating datasets, pipelines, and relationships across large, densely connected data",
-      "Cut Page Ready load time by 11 seconds (roughly 70% faster) through bundle splitting, lazy loading, and eliminating unnecessary rerenders; applied virtualized lists on React Native for demanding UIs",
-      "Shipped real-time features over WebSockets for a live cricket scoring and auction platform, handling high-frequency updates with low latency",
-      "Built backend services end to end — Node.js and Express APIs on PostgreSQL with JWT auth and RBAC, and integrated gRPC between React apps and backend services",
-      "Reworked the UI of a real-time analytics platform; the product grew from $500K to $4M+ ARR over that period",
-      "Wrote end-to-end tests (Cypress, Playwright) and unit tests (Jest, RTL); containerized dev environments with Docker and moved deployments to GitHub Actions",
-      "Use Codex, Claude Code, and Copilot daily for scaffolding and refactors — review all generated code for hallucinated APIs, missing edge cases, and rerender issues before merging",
+      "Building production React and TypeScript applications for enterprise clients. I own features end to end, from the interface a user touches all the way down to the APIs and real time pipelines behind them.",
+    clients: [
+      {
+        name: "Collate (OpenMetadata)",
+        bullets: [
+          "I own feature delivery across the Governance domain at OpenMetadata and Collate. OpenMetadata is an open source data catalog with 15k GitHub stars that enterprises use for metadata management and lineage tracking. I have merged over 250 PRs and also handle paid tier feature work on the Collate side.",
+          "I built the governance workflow builder using React Flow. It is a node based canvas where admins put together triggers, conditions and actions to create custom approval workflows without writing any code. Things like glossary approvals and table or dashboard certifications all go through it. It is running over 10,000 workflows in production today and has cut manual configuration effort by around 60 to 70 percent.",
+          "I also built the Ontology Explorer using Ant G6. It takes a company's entire glossary and renders it as an interactive knowledge graph where you can explore parent and child relationships, filter by relationship type, switch between hierarchical and circular layouts and export everything as PNG, SVG or RDF. It shipped to every paid client.",
+          "I owned the Data Access Request feature from start to finish. That covers the request form where users pick a dataset, access type, permission level, time limit and add a business justification. Then the owner approval and rejection flow, automatic provisioning through policy agents where configured, and a complete audit trail tracking every request, approval, grant and revocation.",
+        ],
+      },
+      {
+        name: "Uber",
+        bullets: [
+          "I migrated a legacy codebase from React class components to TypeScript functional components with hooks and added unit test coverage as part of that work which made a real dent in the stale state bugs that kept coming back.",
+          "I led a full product revamp that brought in TanStack Query for data caching and TanStack Form for form state. We also set up schema driven rendering so backend engineers could add or tweak fields just by updating a schema without touching the frontend at all.",
+          "I built out the Playwright end to end test suite covering the core workflow and form management flows. It caught a number of regressions before they could make it into a release.",
+          "I brought the initial load time down from around 30 seconds to 9 seconds which is roughly a 70 percent improvement. The main levers were code splitting, lazy loading routes and removing rerenders that were happening unnecessarily. I also improved accessibility across the app while going through this.",
+        ],
+      },
+      {
+        name: "StarTree",
+        bullets: [
+          "I owned several modules within the Data Manager product from the interface all the way down to the data flow and introduced Zustand to handle state management in a more scoped and lightweight way.",
+          "I worked closely with Product and UX on a complete UI overhaul. This happened during a period when the product went from $500K to over $4M in ARR.",
+          "I built out Cypress end to end coverage across the whole product which made a real difference in how many regressions were making it into releases.",
+          "I defined shared React and Redux/Zustand patterns that the team eventually adopted as conventions. That reduced a lot of the back and forth we were having in code reviews around state management decisions.",
+        ],
+      },
+      {
+        name: "The 12th Men",
+        bullets: [
+          "I built both the React Native (Expo) frontend and the Node.js/Express backend for a live cricket scoring platform. It handled ball by ball updates and IPL style player auctions with real time bidding, purse tracking and countdown timers all running at once.",
+          "I designed the WebSocket architecture to make sure scoring and auction updates hit connected screens in real time without losing anything on the backend.",
+          "We later expanded the platform to cover pickleball and badminton adding tournament management, fixtures, standings and fantasy leagues. I also fixed scroll performance by switching to virtualized lists and wired up Firebase push notifications.",
+        ],
+      },
+      {
+        name: "GoodBug",
+        bullets: [
+          "I worked full stack on a React Native health tracking app built on Node.js/Express with PostgreSQL. I shipped several tracking modules from scratch covering water intake, sports activity, general physical activity and swimming.",
+          "I also designed the RBAC model and the login and signup flow. Every API endpoint was secured with JWT based token authentication.",
+        ],
+      },
     ],
-    tech: ["React", "TypeScript", "React Flow", "Ant G6", "Node.js", "PostgreSQL", "WebSockets", "gRPC", "Playwright", "Redux", "Tailwind CSS", "Docker"],
-    awards: ["Standout Performer — Aug 2025 & Aug 2024", "Fresher of the Year — Sep 2023"],
+    tech: ["React", "TypeScript", "React Flow", "Ant G6", "React Native", "Node.js", "PostgreSQL", "WebSockets", "gRPC", "Playwright", "Cypress", "TanStack Query", "Redux", "Zustand", "Tailwind CSS", "Docker"],
+    awards: ["Standout Performer — Aug 2025", "Standout Performer — Aug 2024", "Fresher of the Year — Sep 2023"],
   },
 ];
 
@@ -62,16 +95,23 @@ export function Experience() {
                       </div>
                     </div>
 
-                    <p className="text-[#A1A1AA] leading-relaxed mb-6">{exp.description}</p>
+                    <p className="text-[#A1A1AA] leading-relaxed mb-8">{exp.description}</p>
 
-                    <ul className="space-y-3 mb-6">
-                      {exp.achievements.map((ach, j) => (
-                        <li key={j} className="flex items-start gap-3 text-sm text-[#A1A1AA]">
-                          <span className="w-1.5 h-1.5 rounded-full bg-[#4F8CFF] mt-2 flex-shrink-0" />
-                          {ach}
-                        </li>
+                    <div className="space-y-8 mb-8">
+                      {exp.clients.map((client) => (
+                        <div key={client.name}>
+                          <p className="text-sm font-semibold text-[#4F8CFF] mb-3 italic">{client.name}</p>
+                          <ul className="space-y-3">
+                            {client.bullets.map((bullet, j) => (
+                              <li key={j} className="flex items-start gap-3 text-sm text-[#A1A1AA]">
+                                <span className="w-1.5 h-1.5 rounded-full bg-[#4F8CFF] mt-2 flex-shrink-0" />
+                                {bullet}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       ))}
-                    </ul>
+                    </div>
 
                     <div className="flex flex-wrap gap-2 mb-6">
                       {exp.tech.map((t) => (

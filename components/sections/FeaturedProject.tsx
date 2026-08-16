@@ -28,15 +28,16 @@ export function FeaturedProject() {
                 </h3>
 
                 <p className="text-[#A1A1AA] text-lg leading-relaxed mb-8">
-                  A visual workflow automation tool I built at Deuex Solutions. Users can
-                  design and publish multi-step automations using a drag-and-drop canvas.
-                  It runs 10,000+ workflow executions in production across enterprise clients.
+                  A visual workflow automation tool I built at Deuex Solutions. Admins
+                  design and publish multi step approval workflows on a drag and drop
+                  canvas with no code required. It is running over 10,000 workflows in
+                  production across enterprise clients today.
                 </p>
 
                 <ul className="space-y-3 mb-8">
                   {[
-                    "Node-based canvas editor built with React Flow",
-                    "Real-time workflow execution monitoring",
+                    "Node based canvas editor built with React Flow",
+                    "Real time workflow execution monitoring",
                     "10,000+ active workflows running in production",
                     "Custom node types built with TypeScript",
                   ].map((point) => (
