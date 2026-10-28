@@ -19,19 +19,21 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
-const BASE_URL = "https://anujkumar.dev";
+const BASE_URL = "https://anujkumar-yadav.netlify.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Anujkumar Yadav — Frontend Software Engineer",
+    default: "Anujkumar Yadav — Full Stack Software Engineer",
     template: "%s | Anujkumar Yadav",
   },
   description:
-    "Frontend Software Engineer specializing in React, TypeScript, and enterprise-scale applications. Currently at Deuex Solutions. 4+ years of experience building beautiful, performant software.",
+    "Full Stack Software Engineer building web and mobile products with React, TypeScript, React Native, and Node.js. Core contributor to OpenMetadata.",
   keywords: [
     "Anujkumar Yadav",
+    "Full Stack Engineer",
     "Frontend Engineer",
+    "OpenMetadata",
     "React Developer",
     "TypeScript",
     "Next.js",
@@ -47,23 +49,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: BASE_URL,
     siteName: "Anujkumar Yadav",
-    title: "Anujkumar Yadav — Frontend Software Engineer",
+    title: "Anujkumar Yadav — Full Stack Software Engineer",
     description:
-      "Frontend Software Engineer specializing in React, TypeScript, and enterprise-scale applications.",
+      "Full Stack Software Engineer building web and mobile products with React, TypeScript, React Native, and Node.js. Core contributor to OpenMetadata.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Anujkumar Yadav — Frontend Software Engineer",
+        alt: "Anujkumar Yadav — Full Stack Software Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Anujkumar Yadav — Frontend Software Engineer",
+    title: "Anujkumar Yadav — Full Stack Software Engineer",
     description:
-      "Frontend Software Engineer specializing in React, TypeScript, and enterprise-scale applications.",
+      "Full Stack Software Engineer building web and mobile products with React, TypeScript, React Native, and Node.js. Core contributor to OpenMetadata.",
     images: ["/og-image.png"],
   },
   robots: {

@@ -20,7 +20,7 @@ export function FeaturedProject() {
               <div className="p-10 md:p-14 flex flex-col justify-center">
                 <div className="flex flex-wrap gap-2 mb-6">
                   <Badge variant="accent">Enterprise</Badge>
-                  <Badge>Built at Deuex Solutions</Badge>
+                  <Badge>OpenMetadata · Collate</Badge>
                 </div>
 
                 <h3 className="text-3xl md:text-4xl font-semibold text-[#FAFAFA] mb-4 tracking-tight">
@@ -28,16 +28,16 @@ export function FeaturedProject() {
                 </h3>
 
                 <p className="text-[#A1A1AA] text-lg leading-relaxed mb-8">
-                  A visual workflow automation tool I built at Deuex Solutions. Users can
-                  design and publish multi-step automations using a drag-and-drop canvas.
-                  It runs 10,000+ workflow executions in production across enterprise clients.
+                  The no-code governance workflow builder I built for OpenMetadata and
+                  Collate. Admins compose triggers, conditions, and actions into approval
+                  workflows on a drag-and-drop canvas, without writing code.
                 </p>
 
                 <ul className="space-y-3 mb-8">
                   {[
                     "Node-based canvas editor built with React Flow",
-                    "Real-time workflow execution monitoring",
-                    "10,000+ active workflows running in production",
+                    "Triggers, conditions, and approval steps composed visually",
+                    "Powers glossary approval and asset certification workflows",
                     "Custom node types built with TypeScript",
                   ].map((point) => (
                     <li key={point} className="flex items-start gap-3 text-sm text-[#A1A1AA]">
@@ -112,7 +112,7 @@ export function FeaturedProject() {
 
                     <div className="pt-2 flex items-center gap-2 text-xs text-[#A1A1AA]">
                       <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                      <span>10,247 runs · 99.8% success rate</span>
+                      <span>Glossary approval · Asset certification</span>
                     </div>
                   </div>
                 </div>

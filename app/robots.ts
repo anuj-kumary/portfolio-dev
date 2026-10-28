@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://anujkumar.dev/sitemap.xml",
+    sitemap: "https://anujkumar-yadav.netlify.app/sitemap.xml",
   };
 }

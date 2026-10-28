@@ -2,9 +2,9 @@ import { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Anujkumar Yadav — Frontend Software Engineer",
+    name: "Anujkumar Yadav — Full Stack Software Engineer",
     short_name: "Anujkumar Yadav",
-    description: "Frontend Software Engineer specializing in React, TypeScript, and enterprise-scale applications.",
+    description: "Full Stack Software Engineer building web and mobile products with React, TypeScript, React Native, and Node.js. Core contributor to OpenMetadata.",
     start_url: "/",
     display: "standalone",
     background_color: "#0B0B0C",

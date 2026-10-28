@@ -12,12 +12,12 @@ const headers: RequestInit["headers"] = {
 
 // Specific repos to feature on the portfolio
 const FEATURED_REPOS = [
-  "OpenMetadata",
-  "Code-Snippets-Builder",
-  "Your-Github-Contributions",
-  "mitro",
-  "TechHub",
-  "react-native-toastify",
+  "open-metadata/OpenMetadata",
+  `${GITHUB_USERNAME}/react-native-toastify`,
+  `${GITHUB_USERNAME}/PeerPlan`,
+  `${GITHUB_USERNAME}/mitro`,
+  `${GITHUB_USERNAME}/TechHub`,
+  `${GITHUB_USERNAME}/Eagle-stores`,
 ];
 
 export async function getGitHubUser(): Promise<GitHubUser | null> {
@@ -37,7 +37,7 @@ export async function getPublicRepos(): Promise<GitHubRepo[]> {
   try {
     const results = await Promise.all(
       FEATURED_REPOS.map((name) =>
-        fetch(`${BASE_URL}/repos/${GITHUB_USERNAME}/${name}`, {
+        fetch(`${BASE_URL}/repos/${name}`, {
           headers,
           next: { revalidate: 3600 },
         }).then((r) => (r.ok ? (r.json() as Promise<GitHubRepo>) : null))

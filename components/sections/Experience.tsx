@@ -13,13 +13,14 @@ const experiences = [
     description:
       "Building production React and TypeScript applications backed by Node.js services. Own features end to end, from the canvas a user touches to the APIs and real-time pipelines behind them.",
     achievements: [
-      "Contributed to Uber's internal uWorc workflow platform — migrated the codebase from React class components to TypeScript functional components, reducing recurring bugs and improving maintainability",
-      "Built a node-based visual workflow editor in React Flow now driving 10,000+ governance workflows, replacing manual processes and cutting team effort by 60–70%",
+      "Migrated a legacy React class-component codebase at Uber to TypeScript functional components with hooks, adding unit tests that reduced recurring stale-state bugs",
+      "Built the no-code governance workflow builder for OpenMetadata on React Flow, where admins compose triggers, conditions, and actions (glossary approval, asset certification) into approval workflows",
+      "Owned the frontend of Data Access Requests in Collate: request form, approve/reject flow with a lifecycle view, time-bound access, and a full audit trail",
       "Built the Ontology Explorer for OpenMetadata with Ant G6 — an interactive graph canvas for navigating datasets, pipelines, and relationships across large, densely connected data",
-      "Cut Page Ready load time by 11 seconds (roughly 70% faster) through bundle splitting, lazy loading, and eliminating unnecessary rerenders; applied virtualized lists on React Native for demanding UIs",
+      "Cut Uber's initial load time from ~30s to ~9s through route-level code splitting, lazy loading, and eliminating unnecessary rerenders; applied virtualized lists on React Native for demanding UIs",
       "Shipped real-time features over WebSockets for a live cricket scoring and auction platform, handling high-frequency updates with low latency",
       "Built backend services end to end — Node.js and Express APIs on PostgreSQL with JWT auth and RBAC, and integrated gRPC between React apps and backend services",
-      "Reworked the UI of a real-time analytics platform; the product grew from $500K to $4M+ ARR over that period",
+      "Partnered with Product and UX on a full UI overhaul of StarTree's Data Manager during the company's high-growth phase",
       "Wrote end-to-end tests (Cypress, Playwright) and unit tests (Jest, RTL); containerized dev environments with Docker and moved deployments to GitHub Actions",
       "Use Codex, Claude Code, and Copilot daily for scaffolding and refactors — review all generated code for hallucinated APIs, missing edge cases, and rerender issues before merging",
     ],
@@ -35,7 +36,7 @@ export function Experience() {
         <SectionHeader
           label="Experience"
           title="Where I've worked."
-          description="4 years at Deuex Solutions building production systems across enterprise clients."
+          description="4+ years at Deuex Solutions building production systems for Collate, Uber, StarTree, and others."
         />
 
         <div className="relative">
