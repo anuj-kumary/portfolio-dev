@@ -6,7 +6,7 @@ import { MapPin, Briefcase, Code2, Zap } from "lucide-react";
 const highlights = [
   {
     icon: Briefcase,
-    label: "4 Years",
+    label: "4+ Years",
     description: "Shipping production React and TypeScript applications at Deuex Solutions since 2022",
   },
   {
@@ -16,8 +16,8 @@ const highlights = [
   },
   {
     icon: Zap,
-    label: "70% Faster",
-    description: "Cut Page Ready load time by 11 seconds on a core enterprise product through focused optimization",
+    label: "~30s → ~9s",
+    description: "Cut initial load time on a large enterprise web app through code splitting, lazy loading, and render optimization",
   },
   {
     icon: MapPin,
@@ -43,20 +43,20 @@ export function About() {
                 I work at{" "}
                 <span className="text-[#FAFAFA] font-medium">Deuex Solutions</span> where
                 I have spent the past four years building things I find genuinely interesting
-                — node-based visual editors, real-time dashboards, graph canvas UIs, and the
+                — node-based visual editors, real-time apps, graph canvas UIs, and the
                 backend services that make them work.
               </p>
               <p>
                 Most of my day is React and TypeScript, but I am equally comfortable on the
                 backend with Node.js, PostgreSQL, gRPC, and WebSockets. I have shipped
-                real-time features for a live cricket scoring platform, built governance
-                workflow tools that handle 10,000+ daily runs, and contributed to{" "}
-                <span className="text-[#FAFAFA]">OpenMetadata</span> — an open standard for
-                data infrastructure used by companies globally.
+                real-time features for a live cricket scoring platform, built a no-code
+                governance workflow builder, and I am a core contributor to{" "}
+                <span className="text-[#FAFAFA]">OpenMetadata</span> — an open-source
+                metadata platform used by companies globally.
               </p>
               <p>
-                Performance is something I take seriously. I cut Page Ready load time by 11
-                seconds (roughly 70%) on one of our core products through bundle splitting,
+                Performance is something I take seriously. I cut initial load time from
+                about 30 seconds to 9 on a large enterprise web app through code splitting,
                 lazy loading, and eliminating unnecessary rerenders.
               </p>
               <p>

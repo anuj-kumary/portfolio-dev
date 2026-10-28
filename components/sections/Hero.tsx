@@ -77,16 +77,15 @@ export function Hero() {
 
             <FadeUp delay={0.35}>
               <p className="text-xl md:text-2xl text-[#4F8CFF] font-medium mb-8 tracking-tight">
-                Frontend Software Engineer
+                Full Stack Software Engineer
               </p>
             </FadeUp>
 
             <FadeUp delay={0.45}>
               <p className="text-lg text-[#A1A1AA] leading-relaxed mb-12">
-                Building scalable React applications,
-                beautiful user experiences,
-                AI-powered developer tools,
-                and enterprise software.{" "}
+                Building scalable web and mobile products with React,
+                TypeScript, React Native, and Node.js. Core contributor
+                to OpenMetadata.{" "}
                 <span className="text-[#FAFAFA] font-medium">Currently at Deuex Solutions.</span>
               </p>
             </FadeUp>
@@ -142,7 +141,7 @@ export function Hero() {
                   <div className="w-2.5 h-2.5 rounded-full bg-[#FF5F57]" />
                   <div className="w-2.5 h-2.5 rounded-full bg-[#FEBC2E]" />
                   <div className="w-2.5 h-2.5 rounded-full bg-[#28C840]" />
-                  <span className="ml-2 text-xs text-[#A1A1AA] font-mono">anujkumar.dev</span>
+                  <span className="ml-2 text-xs text-[#A1A1AA] font-mono">engineer.ts</span>
                 </div>
                 <div className="p-5 font-mono text-sm space-y-2">
                   <p>
@@ -156,7 +155,7 @@ export function Hero() {
                   </p>
                   <p className="pl-4">
                     <span className="text-[#A1A1AA]">role:</span>{" "}
-                    <span className="text-emerald-400">&quot;Frontend Engineer&quot;</span><span className="text-[#A1A1AA]">,</span>
+                    <span className="text-emerald-400">&quot;Full Stack Engineer&quot;</span><span className="text-[#A1A1AA]">,</span>
                   </p>
                   <p className="pl-4">
                     <span className="text-[#A1A1AA]">exp:</span>{" "}

@@ -82,7 +82,7 @@ export function Contact() {
             </div>
             <Link
               href="/resume.pdf"
-              download
+              download="Anujkumar_Yadav_Resume.pdf"
               className="flex-shrink-0 inline-flex items-center gap-2 bg-[#4F8CFF] text-white font-medium px-6 py-3 rounded-xl hover:bg-[#6BA3FF] transition-all duration-200"
             >
               <Download size={16} />
